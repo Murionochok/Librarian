@@ -1,0 +1,3 @@
+C:\Users\Lenovo\Desktop\komp\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\komp\tmpName\Librarian\Librarian\Debug\Librarian.Form1.resources
+C:\Users\Lenovo\Desktop\komp\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache
