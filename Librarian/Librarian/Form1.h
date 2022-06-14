@@ -1,5 +1,5 @@
 #pragma once
-
+#include "MyForm.h"
 namespace CppCLRWinformsProjekt {
 
 	using namespace System;
@@ -250,6 +250,8 @@ namespace CppCLRWinformsProjekt {
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		
+		
 	}
 	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
