@@ -39,7 +39,7 @@ namespace Librarian {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ label1;
+
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox5;
 	private: System::Windows::Forms::TextBox^ textBox4;
@@ -48,6 +48,8 @@ namespace Librarian {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::GroupBox^ groupBox2;
 	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
+	private: System::Windows::Forms::Label^ label1;
 	private: System::ComponentModel::IContainer^ components;
 	protected:
 
@@ -70,6 +72,9 @@ namespace Librarian {
 			this->imageList1 = (gcnew System::Windows::Forms::ImageList(this->components));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
@@ -77,9 +82,7 @@ namespace Librarian {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
@@ -101,7 +104,7 @@ namespace Librarian {
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 44)));
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 45)));
 			this->tableLayoutPanel1->Size = System::Drawing::Size(1920, 45);
 			this->tableLayoutPanel1->TabIndex = 0;
 			this->tableLayoutPanel1->Visible = false;
@@ -148,6 +151,38 @@ namespace Librarian {
 			this->groupBox1->Size = System::Drawing::Size(650, 879);
 			this->groupBox1->TabIndex = 2;
 			this->groupBox1->TabStop = false;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Calibri", 50.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label4->Location = System::Drawing::Point(217, 787);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(205, 82);
+			this->label4->TabIndex = 7;
+			this->label4->Text = L"Вийти";
+			// 
+			// groupBox2
+			// 
+			this->groupBox2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(132)), static_cast<System::Int32>(static_cast<System::Byte>(165)),
+				static_cast<System::Int32>(static_cast<System::Byte>(157)));
+			this->groupBox2->Controls->Add(this->label3);
+			this->groupBox2->Location = System::Drawing::Point(27, 670);
+			this->groupBox2->Name = L"groupBox2";
+			this->groupBox2->Size = System::Drawing::Size(576, 100);
+			this->groupBox2->TabIndex = 6;
+			this->groupBox2->TabStop = false;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Calibri", 48));
+			this->label3->Location = System::Drawing::Point(99, 16);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(378, 78);
+			this->label3->TabIndex = 0;
+			this->label3->Text = L"Продовжити";
 			// 
 			// textBox5
 			// 
@@ -230,37 +265,10 @@ namespace Librarian {
 			this->label1->TabIndex = 3;
 			this->label1->Text = L"Librarian";
 			// 
-			// label3
+			// notifyIcon1
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Calibri", 48));
-			this->label3->Location = System::Drawing::Point(99, 16);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(378, 78);
-			this->label3->TabIndex = 0;
-			this->label3->Text = L"Продовжити";
-			// 
-			// groupBox2
-			// 
-			this->groupBox2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(132)), static_cast<System::Int32>(static_cast<System::Byte>(165)),
-				static_cast<System::Int32>(static_cast<System::Byte>(157)));
-			this->groupBox2->Controls->Add(this->label3);
-			this->groupBox2->Location = System::Drawing::Point(27, 670);
-			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(576, 100);
-			this->groupBox2->TabIndex = 6;
-			this->groupBox2->TabStop = false;
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Calibri", 50.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(217, 787);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(205, 82);
-			this->label4->TabIndex = 7;
-			this->label4->Text = L"Вийти";
+			this->notifyIcon1->Text = L"notifyIcon1";
+			this->notifyIcon1->Visible = true;
 			// 
 			// MyForm
 			// 
@@ -268,13 +276,13 @@ namespace Librarian {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(202)),
 				static_cast<System::Int32>(static_cast<System::Byte>(195)));
-			this->ClientSize = System::Drawing::Size(1904, 1041);
+			this->ClientSize = System::Drawing::Size(962, 552);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Location = System::Drawing::Point(100, 635);
-			this->MinimumSize = System::Drawing::Size(1918, 1038);
+			this->MinimumSize = System::Drawing::Size(967, 579);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
