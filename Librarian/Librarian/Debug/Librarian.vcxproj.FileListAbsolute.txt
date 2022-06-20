@@ -11,3 +11,10 @@ B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.Form1.resources
 B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.MyForm.resources
 B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.Users.resources
 B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.vcxproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.Form1.resources
+C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.MyForm.resources
+C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.Users.resources
+C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.WriteBook.resources
+C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.Creators.resources

@@ -48,6 +48,8 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
 
+
+
 	private: System::Windows::Forms::Label^ label2;
 
 
@@ -196,13 +198,12 @@ namespace CppCLRWinformsProjekt {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Calibri", 33, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(158, 142);
+			this->label2->Location = System::Drawing::Point(100, 179);
 			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(179, 54);
-			this->label2->TabIndex = 11;
+			this->label2->TabIndex = 13;
 			this->label2->Text = L"Librarian";
-			this->label2->Click += gcnew System::EventHandler(this, &Form1::label2_Click);
 			// 
 			// Form1
 			// 
@@ -259,6 +260,8 @@ namespace CppCLRWinformsProjekt {
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

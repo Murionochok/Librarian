@@ -78,6 +78,11 @@ namespace Librarian {
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->imageList1 = (gcnew System::Windows::Forms::ImageList(this->components));
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -85,15 +90,10 @@ namespace Librarian {
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -151,6 +151,61 @@ namespace Librarian {
 			this->groupBox1->Size = System::Drawing::Size(650, 879);
 			this->groupBox1->TabIndex = 2;
 			this->groupBox1->TabStop = false;
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label9->Location = System::Drawing::Point(23, 525);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(225, 23);
+			this->label9->TabIndex = 12;
+			this->label9->Text = L"Адреса електронної пошти";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label8->Location = System::Drawing::Point(23, 426);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(144, 23);
+			this->label8->TabIndex = 11;
+			this->label8->Text = L"Номер телефону";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Calibri", 14));
+			this->label7->Location = System::Drawing::Point(23, 327);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(151, 23);
+			this->label7->TabIndex = 10;
+			this->label7->Text = L"Дата народження";
+			this->label7->Click += gcnew System::EventHandler(this, &MyForm::label7_Click);
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Calibri", 14));
+			this->label6->Location = System::Drawing::Point(23, 230);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(86, 23);
+			this->label6->TabIndex = 9;
+			this->label6->Text = L"Прізвище";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label5->Location = System::Drawing::Point(23, 127);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(42, 23);
+			this->label5->TabIndex = 8;
+			this->label5->Text = L"Ім\'я";
+			this->label5->Click += gcnew System::EventHandler(this, &MyForm::label5_Click);
 			// 
 			// label4
 			// 
@@ -227,6 +282,17 @@ namespace Librarian {
 			this->textBox2->Size = System::Drawing::Size(596, 74);
 			this->textBox2->TabIndex = 2;
 			// 
+			// textBox1
+			// 
+			this->textBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(247)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
+				static_cast<System::Int32>(static_cast<System::Byte>(226)));
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Calibri", 41));
+			this->textBox1->Location = System::Drawing::Point(27, 153);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(596, 74);
+			this->textBox1->TabIndex = 1;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
+			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
@@ -256,79 +322,13 @@ namespace Librarian {
 			this->notifyIcon1->Text = L"notifyIcon1";
 			this->notifyIcon1->Visible = true;
 			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(23, 127);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(42, 23);
-			this->label5->TabIndex = 8;
-			this->label5->Text = L"Ім\'я";
-			this->label5->Click += gcnew System::EventHandler(this, &MyForm::label5_Click);
-			// 
-			// textBox1
-			// 
-			this->textBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(247)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
-				static_cast<System::Int32>(static_cast<System::Byte>(226)));
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Calibri", 41));
-			this->textBox1->Location = System::Drawing::Point(27, 153);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(596, 74);
-			this->textBox1->TabIndex = 1;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Calibri", 14));
-			this->label6->Location = System::Drawing::Point(23, 230);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(86, 23);
-			this->label6->TabIndex = 9;
-			this->label6->Text = L"Прізвище";
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Calibri", 14));
-			this->label7->Location = System::Drawing::Point(23, 327);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(151, 23);
-			this->label7->TabIndex = 10;
-			this->label7->Text = L"Дата народження";
-			this->label7->Click += gcnew System::EventHandler(this, &MyForm::label7_Click);
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label8->Location = System::Drawing::Point(23, 426);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(144, 23);
-			this->label8->TabIndex = 11;
-			this->label8->Text = L"Номер телефону";
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label9->Location = System::Drawing::Point(23, 525);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(225, 23);
-			this->label9->TabIndex = 12;
-			this->label9->Text = L"Адреса електронної пошти";
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(202)),
 				static_cast<System::Int32>(static_cast<System::Byte>(195)));
-			this->ClientSize = System::Drawing::Size(1904, 1041);
+			this->ClientSize = System::Drawing::Size(1604, 881);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->tableLayoutPanel1);
