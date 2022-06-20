@@ -1,0 +1,13 @@
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  CppCLR_WinformsProjekt.cpp
+  Form1.cpp
+  MyForm.cpp
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(11,27): error C2871: 'Librarian': a namespace with this name does not exist
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(248,3): error C2065: 'MyForm': undeclared identifier
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(248,11): error C2065: 'form2': undeclared identifier
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(249,3): error C2065: 'form2': undeclared identifier
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(249,17): error C2061: syntax error: identifier 'MyForm'
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(250,3): error C2065: 'form2': undeclared identifier
+  Users.cpp
+  Generating Code...

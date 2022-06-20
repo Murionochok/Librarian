@@ -1,12 +1,13 @@
 C:\Users\Lenovo\Desktop\komp\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.AssemblyReference.cache
 C:\Users\Lenovo\Desktop\komp\tmpName\Librarian\Librarian\Debug\Librarian.Form1.resources
 C:\Users\Lenovo\Desktop\komp\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache
-B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.AssemblyReference.cache
-B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.Form1.resources
-B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache
-B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.MyForm.resources
 C:\Users\Lenovo\Desktop\project Librarian\Librarian\Librarian\Librarian\Debug\Librarian.vcxproj.AssemblyReference.cache
 C:\Users\Lenovo\Desktop\project Librarian\Librarian\Librarian\Librarian\Debug\Librarian.Form1.resources
 C:\Users\Lenovo\Desktop\project Librarian\Librarian\Librarian\Librarian\Debug\Librarian.MyForm.resources
 C:\Users\Lenovo\Desktop\project Librarian\Librarian\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache
 C:\Users\Lenovo\Desktop\project Librarian\Librarian\Librarian\Librarian\Debug\Librarian.Users.resources
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.AssemblyReference.cache
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.Form1.resources
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.MyForm.resources
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.Users.resources
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache

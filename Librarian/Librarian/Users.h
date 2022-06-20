@@ -34,11 +34,11 @@ namespace Librarian {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+
 	protected:
-	private: System::Windows::Forms::Button^ button2;
+
 	private: System::Windows::Forms::Button^ button3;
-	private: System::Windows::Forms::Button^ button4;
+
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::GroupBox^ groupBox2;
 	private: System::Windows::Forms::GroupBox^ groupBox3;
@@ -77,7 +77,7 @@ namespace Librarian {
 	private: System::Windows::Forms::Label^ label29;
 	private: System::Windows::Forms::Label^ label30;
 	private: System::Windows::Forms::Label^ label31;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 	private: System::Windows::Forms::Label^ label32;
 
 	private:
@@ -93,29 +93,23 @@ namespace Librarian {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Users::typeid));
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
-			this->vScrollBar1 = (gcnew System::Windows::Forms::VScrollBar());
-			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
@@ -126,6 +120,8 @@ namespace Librarian {
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->vScrollBar1 = (gcnew System::Windows::Forms::VScrollBar());
+			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->label24 = (gcnew System::Windows::Forms::Label());
@@ -136,45 +132,13 @@ namespace Librarian {
 			this->label29 = (gcnew System::Windows::Forms::Label());
 			this->label30 = (gcnew System::Windows::Forms::Label());
 			this->label31 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->label32 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->groupBox3->SuspendLayout();
 			this->groupBox4->SuspendLayout();
 			this->groupBox5->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// button1
-			// 
-			this->button1->AutoSize = true;
-			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button1->Location = System::Drawing::Point(1439, 45);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(200, 65);
-			this->button1->TabIndex = 1;
-			this->button1->Text = L"Розробники";
-			this->button1->UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this->button2->AutoSize = true;
-			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button2->Location = System::Drawing::Point(1639, 45);
-			this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(200, 65);
-			this->button2->TabIndex = 2;
-			this->button2->Text = L"Справка";
-			this->button2->UseVisualStyleBackColor = true;
 			// 
 			// button3
 			// 
@@ -183,28 +147,14 @@ namespace Librarian {
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button3->Location = System::Drawing::Point(1439, 178);
-			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button3->Location = System::Drawing::Point(1633, 175);
+			this->button3->Margin = System::Windows::Forms::Padding(2);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(200, 65);
 			this->button3->TabIndex = 3;
 			this->button3->Text = L"Книги";
 			this->button3->UseVisualStyleBackColor = true;
-			// 
-			// button4
-			// 
-			this->button4->AutoSize = true;
-			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button4->Location = System::Drawing::Point(1639, 178);
-			this->button4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(200, 65);
-			this->button4->TabIndex = 4;
-			this->button4->Text = L"Реєстрація";
-			this->button4->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &Users::button3_Click);
 			// 
 			// groupBox1
 			// 
@@ -223,7 +173,6 @@ namespace Librarian {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Cursor = System::Windows::Forms::Cursors::WaitCursor;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 41, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->textBox1->Location = System::Drawing::Point(593, 65);
@@ -231,7 +180,6 @@ namespace Librarian {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(550, 69);
 			this->textBox1->TabIndex = 9;
-			this->textBox1->UseWaitCursor = true;
 			// 
 			// label1
 			// 
@@ -277,6 +225,116 @@ namespace Librarian {
 			this->groupBox3->TabIndex = 0;
 			this->groupBox3->TabStop = false;
 			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label11->Location = System::Drawing::Point(261, 144);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(144, 25);
+			this->label11->TabIndex = 10;
+			this->label11->Text = L"з народження";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label10->Location = System::Drawing::Point(261, 112);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(158, 25);
+			this->label10->TabIndex = 8;
+			this->label10->Text = L"Всі і так знають";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label9->Location = System::Drawing::Point(261, 78);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(73, 25);
+			this->label9->TabIndex = 7;
+			this->label9->Text = L"Джолі";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label8->Location = System::Drawing::Point(261, 48);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(98, 25);
+			this->label8->TabIndex = 6;
+			this->label8->Text = L"Анджела";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label7->Location = System::Drawing::Point(261, 16);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(56, 25);
+			this->label7->TabIndex = 5;
+			this->label7->Text = L"0000";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label6->Location = System::Drawing::Point(19, 144);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(169, 25);
+			this->label6->TabIndex = 4;
+			this->label6->Text = L"Дата реєстрації:";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label5->Location = System::Drawing::Point(19, 112);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(182, 25);
+			this->label5->TabIndex = 3;
+			this->label5->Text = L"Номер телефону:";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label4->Location = System::Drawing::Point(19, 78);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(227, 25);
+			this->label4->TabIndex = 2;
+			this->label4->Text = L"Прізвище користувача:";
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label3->Location = System::Drawing::Point(19, 48);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(175, 25);
+			this->label3->TabIndex = 1;
+			this->label3->Text = L"Ім\'я користувача:";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label2->Location = System::Drawing::Point(19, 16);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(201, 25);
+			this->label2->TabIndex = 0;
+			this->label2->Text = L"Номер користувача:";
+			// 
 			// groupBox4
 			// 
 			this->groupBox4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(247)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
@@ -296,143 +354,6 @@ namespace Librarian {
 			this->groupBox4->Size = System::Drawing::Size(1745, 175);
 			this->groupBox4->TabIndex = 0;
 			this->groupBox4->TabStop = false;
-			// 
-			// vScrollBar1
-			// 
-			this->vScrollBar1->Location = System::Drawing::Point(1836, 486);
-			this->vScrollBar1->Name = L"vScrollBar1";
-			this->vScrollBar1->Size = System::Drawing::Size(17, 555);
-			this->vScrollBar1->TabIndex = 0;
-			// 
-			// groupBox5
-			// 
-			this->groupBox5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(247)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
-				static_cast<System::Int32>(static_cast<System::Byte>(226)));
-			this->groupBox5->Controls->Add(this->label22);
-			this->groupBox5->Controls->Add(this->label23);
-			this->groupBox5->Controls->Add(this->label24);
-			this->groupBox5->Controls->Add(this->label25);
-			this->groupBox5->Controls->Add(this->label26);
-			this->groupBox5->Controls->Add(this->label27);
-			this->groupBox5->Controls->Add(this->label28);
-			this->groupBox5->Controls->Add(this->label29);
-			this->groupBox5->Controls->Add(this->label30);
-			this->groupBox5->Controls->Add(this->label31);
-			this->groupBox5->Location = System::Drawing::Point(88, 848);
-			this->groupBox5->Name = L"groupBox5";
-			this->groupBox5->Size = System::Drawing::Size(1745, 175);
-			this->groupBox5->TabIndex = 10;
-			this->groupBox5->TabStop = false;
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(19, 16);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(201, 25);
-			this->label2->TabIndex = 0;
-			this->label2->Text = L"Номер користувача:";
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(19, 48);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(175, 25);
-			this->label3->TabIndex = 1;
-			this->label3->Text = L"Ім\'я користувача:";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(19, 78);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(227, 25);
-			this->label4->TabIndex = 2;
-			this->label4->Text = L"Прізвище користувача:";
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(19, 112);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(182, 25);
-			this->label5->TabIndex = 3;
-			this->label5->Text = L"Номер телефону:";
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label6->Location = System::Drawing::Point(19, 144);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(169, 25);
-			this->label6->TabIndex = 4;
-			this->label6->Text = L"Дата реєстрації:";
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label7->Location = System::Drawing::Point(261, 16);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(56, 25);
-			this->label7->TabIndex = 5;
-			this->label7->Text = L"0000";
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label8->Location = System::Drawing::Point(261, 48);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(98, 25);
-			this->label8->TabIndex = 6;
-			this->label8->Text = L"Анджела";
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label9->Location = System::Drawing::Point(261, 78);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(73, 25);
-			this->label9->TabIndex = 7;
-			this->label9->Text = L"Джолі";
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label10->Location = System::Drawing::Point(261, 112);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(158, 25);
-			this->label10->TabIndex = 8;
-			this->label10->Text = L"Всі і так знають";
-			// 
-			// label11
-			// 
-			this->label11->AutoSize = true;
-			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label11->Location = System::Drawing::Point(261, 144);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(144, 25);
-			this->label11->TabIndex = 10;
-			this->label11->Text = L"з народження";
 			// 
 			// label12
 			// 
@@ -544,6 +465,33 @@ namespace Librarian {
 			this->label21->TabIndex = 11;
 			this->label21->Text = L"Номер користувача:";
 			// 
+			// vScrollBar1
+			// 
+			this->vScrollBar1->Location = System::Drawing::Point(1836, 486);
+			this->vScrollBar1->Name = L"vScrollBar1";
+			this->vScrollBar1->Size = System::Drawing::Size(17, 546);
+			this->vScrollBar1->TabIndex = 0;
+			// 
+			// groupBox5
+			// 
+			this->groupBox5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(247)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
+				static_cast<System::Int32>(static_cast<System::Byte>(226)));
+			this->groupBox5->Controls->Add(this->label22);
+			this->groupBox5->Controls->Add(this->label23);
+			this->groupBox5->Controls->Add(this->label24);
+			this->groupBox5->Controls->Add(this->label25);
+			this->groupBox5->Controls->Add(this->label26);
+			this->groupBox5->Controls->Add(this->label27);
+			this->groupBox5->Controls->Add(this->label28);
+			this->groupBox5->Controls->Add(this->label29);
+			this->groupBox5->Controls->Add(this->label30);
+			this->groupBox5->Controls->Add(this->label31);
+			this->groupBox5->Location = System::Drawing::Point(88, 848);
+			this->groupBox5->Name = L"groupBox5";
+			this->groupBox5->Size = System::Drawing::Size(1745, 175);
+			this->groupBox5->TabIndex = 10;
+			this->groupBox5->TabStop = false;
+			// 
 			// label22
 			// 
 			this->label22->AutoSize = true;
@@ -654,17 +602,6 @@ namespace Librarian {
 			this->label31->TabIndex = 11;
 			this->label31->Text = L"Номер користувача:";
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(136, 67);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(190, 248);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox1->TabIndex = 11;
-			this->pictureBox1->TabStop = false;
-			// 
 			// label32
 			// 
 			this->label32->AutoSize = true;
@@ -686,17 +623,13 @@ namespace Librarian {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->ClientSize = System::Drawing::Size(1904, 1041);
 			this->Controls->Add(this->label32);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->groupBox5);
 			this->Controls->Add(this->groupBox4);
 			this->Controls->Add(this->groupBox2);
 			this->Controls->Add(this->vScrollBar1);
 			this->Controls->Add(this->groupBox1);
-			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"Users";
 			this->Text = L"Users";
 			this->groupBox1->ResumeLayout(false);
@@ -708,7 +641,6 @@ namespace Librarian {
 			this->groupBox4->PerformLayout();
 			this->groupBox5->ResumeLayout(false);
 			this->groupBox5->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -716,5 +648,8 @@ namespace Librarian {
 #pragma endregion
 	private: System::Void groupBox2_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
 };
 }

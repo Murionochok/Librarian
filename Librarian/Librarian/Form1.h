@@ -1,5 +1,6 @@
 #pragma once
 #include "MyForm.h"
+#include "Users.h"
 namespace CppCLRWinformsProjekt {
 
 	using namespace System;
@@ -8,13 +9,14 @@ namespace CppCLRWinformsProjekt {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	using namespace Librarian;
 	/// <summary>
 	/// Zusammenfassung fьr Form1
 	/// </summary>
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
 	public:
+		
 		Form1(void)
 		{
 			InitializeComponent();
@@ -45,7 +47,7 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 	private: System::Windows::Forms::Label^ label2;
 
 
@@ -67,7 +69,6 @@ namespace CppCLRWinformsProjekt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
@@ -76,10 +77,8 @@ namespace CppCLRWinformsProjekt {
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button2
@@ -165,7 +164,7 @@ namespace CppCLRWinformsProjekt {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Cursor = System::Windows::Forms::Cursors::WaitCursor;
+			this->textBox1->Cursor = System::Windows::Forms::Cursors::IBeam;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 41, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->textBox1->Location = System::Drawing::Point(593, 65);
@@ -173,7 +172,6 @@ namespace CppCLRWinformsProjekt {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(550, 69);
 			this->textBox1->TabIndex = 9;
-			this->textBox1->UseWaitCursor = true;
 			// 
 			// label1
 			// 
@@ -189,22 +187,12 @@ namespace CppCLRWinformsProjekt {
 			this->label1->Text = L"¬вед≥ть назву книги";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(150, 48);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(198, 248);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
-			this->pictureBox1->TabIndex = 10;
-			this->pictureBox1->TabStop = false;
-			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(28)), static_cast<System::Int32>(static_cast<System::Byte>(28)),
 				static_cast<System::Int32>(static_cast<System::Byte>(28)));
+			this->label2->Cursor = System::Windows::Forms::Cursors::Default;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Calibri", 33, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ForeColor = System::Drawing::Color::White;
@@ -225,24 +213,22 @@ namespace CppCLRWinformsProjekt {
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1904, 1041);
 			this->Controls->Add(this->label2);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->webBrowser1);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
-			this->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->Cursor = System::Windows::Forms::Cursors::Default;
 			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->Margin = System::Windows::Forms::Padding(2, 1, 2, 1);
-			this->MinimumSize = System::Drawing::Size(1918, 1078);
+			this->MinimumSize = System::Drawing::Size(1918, 1038);
 			this->Name = L"Form1";
 			this->Text = L"Librarian";
 			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -257,10 +243,14 @@ namespace CppCLRWinformsProjekt {
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		Users^ user;
+		user = gcnew Users();
+		user->ShowDialog();
 	}
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-		
-		
+		MyForm^ form2;
+		form2 = gcnew MyForm();
+		form2->ShowDialog();
 	}
 	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
