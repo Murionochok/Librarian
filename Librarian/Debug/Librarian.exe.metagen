@@ -1,6 +1,7 @@
   Librarian.Creators.resources - Embedded, ContainedInManifestFile, 
   Librarian.Form1.resources - Embedded, ContainedInManifestFile, 
   Librarian.MyForm.resources - Embedded, ContainedInManifestFile, 
+  Librarian.Reference.resources - Embedded, ContainedInManifestFile, 
   Librarian.Users.resources - Embedded, ContainedInManifestFile, 
   Librarian.WriteBook.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
@@ -24,12 +25,17 @@ Class Librarian.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class Librarian.Users: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class CppCLRWinformsProjekt.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class Librarian.Creators: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class Librarian.Reference: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Librarian.WriteBook: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 book : Public
+Class Librarian.Creators: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CppCLRWinformsProjekt.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

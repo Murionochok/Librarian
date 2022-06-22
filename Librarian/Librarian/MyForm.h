@@ -1,5 +1,15 @@
 #pragma once
-//#include "Form1.h"
+#include "Back.h"
+#include "pch.h"
+#include <fstream>
+#include <Windows.h>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <iostream>
+#include <msclr\marshal_cppstd.h>
+
+
 namespace Librarian {
 
 	using namespace System;
@@ -15,8 +25,10 @@ namespace Librarian {
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:
+		
 		MyForm(void)
 		{
+			
 			InitializeComponent();
 			
 			//
@@ -52,11 +64,12 @@ namespace Librarian {
 	private: System::Windows::Forms::NotifyIcon^ notifyIcon1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::TextBox^ textBox1;
+
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::TextBox^ textBox1;
 
 	private: System::ComponentModel::IContainer^ components;
 	protected:
@@ -90,10 +103,10 @@ namespace Librarian {
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -130,6 +143,7 @@ namespace Librarian {
 			this->groupBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(199)), static_cast<System::Int32>(static_cast<System::Byte>(196)),
 				static_cast<System::Int32>(static_cast<System::Byte>(196)));
 			this->groupBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
+			this->groupBox1->Controls->Add(this->textBox1);
 			this->groupBox1->Controls->Add(this->label9);
 			this->groupBox1->Controls->Add(this->label8);
 			this->groupBox1->Controls->Add(this->label7);
@@ -141,7 +155,6 @@ namespace Librarian {
 			this->groupBox1->Controls->Add(this->textBox4);
 			this->groupBox1->Controls->Add(this->textBox3);
 			this->groupBox1->Controls->Add(this->textBox2);
-			this->groupBox1->Controls->Add(this->textBox1);
 			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Cursor = System::Windows::Forms::Cursors::Arrow;
 			this->groupBox1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
@@ -282,17 +295,6 @@ namespace Librarian {
 			this->textBox2->Size = System::Drawing::Size(596, 74);
 			this->textBox2->TabIndex = 2;
 			// 
-			// textBox1
-			// 
-			this->textBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(247)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
-				static_cast<System::Int32>(static_cast<System::Byte>(226)));
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Calibri", 41));
-			this->textBox1->Location = System::Drawing::Point(27, 153);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(596, 74);
-			this->textBox1->TabIndex = 1;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
-			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
@@ -322,13 +324,23 @@ namespace Librarian {
 			this->notifyIcon1->Text = L"notifyIcon1";
 			this->notifyIcon1->Visible = true;
 			// 
+			// textBox1
+			// 
+			this->textBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(247)), static_cast<System::Int32>(static_cast<System::Byte>(237)),
+				static_cast<System::Int32>(static_cast<System::Byte>(226)));
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Calibri", 41));
+			this->textBox1->Location = System::Drawing::Point(27, 153);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(596, 74);
+			this->textBox1->TabIndex = 13;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(202)),
 				static_cast<System::Int32>(static_cast<System::Byte>(195)));
-			this->ClientSize = System::Drawing::Size(1604, 881);
+			this->ClientSize = System::Drawing::Size(1904, 1041);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->tableLayoutPanel1);
@@ -345,7 +357,17 @@ namespace Librarian {
 
 		}
 #pragma endregion
-	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {//Continue
+		vector<Registration> users;
+		users = read_users(users);
+		string name = msclr::interop::marshal_as<std::string>(textBox1->Text);
+		string surname = msclr::interop::marshal_as<std::string>(textBox2->Text);
+		string birthday = msclr::interop::marshal_as<std::string>(textBox3->Text);
+		string phoneNumber = msclr::interop::marshal_as<std::string>(textBox4->Text);
+		string mail = msclr::interop::marshal_as<std::string>(textBox5->Text);
+		Registration tmp(name, surname, birthday, mail, phoneNumber);
+		users.push_back(tmp);
+		write_users(users);
 		this->Close();
 	}
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {

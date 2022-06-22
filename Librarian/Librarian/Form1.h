@@ -1,6 +1,12 @@
 #pragma once
 #include "MyForm.h"
 #include "Users.h"
+#include "Reference.h"
+#include "WriteBook.h"
+#include "Creators.h" 
+#include <string>
+#include <msclr\marshal_cppstd.h>
+
 namespace CppCLRWinformsProjekt {
 
 	using namespace System;
@@ -20,6 +26,8 @@ namespace CppCLRWinformsProjekt {
 		Form1(void)
 		{
 			InitializeComponent();
+			
+			
 			//
 			//TODO: Konstruktorcode hier hinzufьgen.
 			//
@@ -43,7 +51,7 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button5;
 
-	private: System::Windows::Forms::WebBrowser^ webBrowser1;
+
 	private: System::Windows::Forms::GroupBox^ groupBox1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ textBox1;
@@ -51,6 +59,13 @@ namespace CppCLRWinformsProjekt {
 
 
 	private: System::Windows::Forms::Label^ label2;
+
+
+
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Button^ button1;
+
+
 
 
 
@@ -75,11 +90,12 @@ namespace CppCLRWinformsProjekt {
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->webBrowser1 = (gcnew System::Windows::Forms::WebBrowser());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -140,19 +156,11 @@ namespace CppCLRWinformsProjekt {
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &Form1::button5_Click);
 			// 
-			// webBrowser1
-			// 
-			this->webBrowser1->Location = System::Drawing::Point(94, 480);
-			this->webBrowser1->Margin = System::Windows::Forms::Padding(2, 3, 2, 3);
-			this->webBrowser1->MinimumSize = System::Drawing::Size(20, 20);
-			this->webBrowser1->Name = L"webBrowser1";
-			this->webBrowser1->Size = System::Drawing::Size(1702, 599);
-			this->webBrowser1->TabIndex = 6;
-			// 
 			// groupBox1
 			// 
 			this->groupBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(132)), static_cast<System::Int32>(static_cast<System::Byte>(165)),
 				static_cast<System::Int32>(static_cast<System::Byte>(157)));
+			this->groupBox1->Controls->Add(this->button1);
 			this->groupBox1->Controls->Add(this->textBox1);
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Cursor = System::Windows::Forms::Cursors::Arrow;
@@ -163,6 +171,20 @@ namespace CppCLRWinformsProjekt {
 			this->groupBox1->Size = System::Drawing::Size(1750, 175);
 			this->groupBox1->TabIndex = 8;
 			this->groupBox1->TabStop = false;
+			// 
+			// button1
+			// 
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button1->Location = System::Drawing::Point(1147, 65);
+			this->button1->Margin = System::Windows::Forms::Padding(2, 1, 2, 1);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(211, 69);
+			this->button1->TabIndex = 18;
+			this->button1->Text = L"Пошук";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click_1);
 			// 
 			// textBox1
 			// 
@@ -205,6 +227,19 @@ namespace CppCLRWinformsProjekt {
 			this->label2->TabIndex = 13;
 			this->label2->Text = L"Librarian";
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->BackColor = System::Drawing::Color::White;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Calibri", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label3->Location = System::Drawing::Point(669, 607);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(381, 78);
+			this->label3->TabIndex = 17;
+			this->label3->Text = L"Не знайдено";
+			this->label3->Click += gcnew System::EventHandler(this, &Form1::label3_Click_1);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -213,9 +248,9 @@ namespace CppCLRWinformsProjekt {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1904, 1041);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->groupBox1);
-			this->Controls->Add(this->webBrowser1);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
@@ -237,23 +272,26 @@ namespace CppCLRWinformsProjekt {
 #pragma endregion
 	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {//Creators
+		Creators^ creators;
+		creators = gcnew Creators();
+		creators->ShowDialog();
 	}
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {//Reference
+		Reference^ ref;
+		ref = gcnew Reference();
+		ref->ShowDialog();
 	}
-	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {//Users
 		Users^ user;
 		user = gcnew Users();
 		user->ShowDialog();
 	}
-	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {//Registration
 		MyForm^ form2;
 		form2 = gcnew MyForm();
 		form2->ShowDialog();
-	}
-	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -262,6 +300,47 @@ private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArg
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void pictureBox1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {//Author
+}
+private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {//Book
+}
+
+private: System::Void label3_Click_1(System::Object^ sender, System::EventArgs^ e) {//Write
+	string s;
+	int j;
+	vector<books> bookList;
+	bookList = read_books(bookList);
+	string a = msclr::interop::marshal_as<std::string>(textBox1->Text);
+	for (int i = 0; i < bookList.size(); i++) {
+		if (bookList[i].bookName == a) {
+			j = i;
+		}
+	}
+	WriteBook^ wb;
+	wb = gcnew WriteBook(j);
+	wb->ShowDialog();
+}
+private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	label3->Text = "Не знайдено";
+	string s;
+	int j;
+	vector<books> bookList;
+	bookList = read_books(bookList);
+	string a = msclr::interop::marshal_as<std::string>(textBox1->Text);
+	for (int i = 0; i < bookList.size(); i++) {
+		if (bookList[i].bookName == a) {
+			j = i;
+			s = bookList[i].author + " " + bookList[i].bookName;
+		}
+	}
+	if (s != "") {
+		if (bookList[j].status[0] == 'a') {
+			String^ str = gcnew String(s.data());
+			label3->Text = str;
+		}
+	}
+	
 }
 };
 }

@@ -41,6 +41,12 @@
     <ClInclude Include="Creators.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Reference.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Back.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinformsProjekt.cpp">
@@ -61,11 +67,17 @@
     <ClCompile Include="Users.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="WriteBook.cpp">
-      <Filter>Headerdateien</Filter>
+    <ClCompile Include="Reference.cpp">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="Creators.cpp">
-      <Filter>Headerdateien</Filter>
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteBook.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Back.cpp">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

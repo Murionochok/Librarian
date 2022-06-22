@@ -144,6 +144,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Back.h" />
     <ClInclude Include="Creators.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -154,6 +155,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Reference.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Users.h">
       <FileType>CppForm</FileType>
@@ -164,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Back.cpp" />
     <ClCompile Include="CppCLR_WinformsProjekt.cpp" />
     <ClCompile Include="Creators.cpp" />
     <ClCompile Include="Form1.cpp" />
@@ -174,6 +179,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Reference.cpp" />
     <ClCompile Include="Users.cpp" />
     <ClCompile Include="WriteBook.cpp" />
   </ItemGroup>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference.resx">
+      <DependentUpon>Reference.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.h</DependentUpon>

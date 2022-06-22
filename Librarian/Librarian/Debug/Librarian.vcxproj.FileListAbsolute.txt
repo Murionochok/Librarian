@@ -18,3 +18,6 @@ C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Libraria
 C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.vcxproj.GenerateResource.cache
 C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.WriteBook.resources
 C:\Users\Lenovo\Desktop\New Librarian\develop\Librarian\Librarian\Debug\Librarian.Creators.resources
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.Creators.resources
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.Reference.resources
+B:\tmpProject\tmpName\Librarian\Librarian\Debug\Librarian.WriteBook.resources

@@ -1,0 +1,66 @@
+[33mcommit 1b5cd628623e2e1ba6dfc8abd919089c486375af[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: Miurionochek <ivanfedonuk95@gmail.com>
+Date:   Mon Jun 20 17:01:47 2022 +0300
+
+    a
+
+[33mcommit 5d817a6f23c8b0dbcf6a207670e7da107b4d204c[m
+Merge: 76f71a1 55c3f01
+Author: Miurionochek <ivanfedonuk95@gmail.com>
+Date:   Mon Jun 20 17:00:19 2022 +0300
+
+    Merge branch 'develop' of https://github.com/Miurionochek/tmpName into develop
+
+[33mcommit 76f71a1c7c10cff6275b676f16de5ddc44b2d285[m
+Author: Miurionochek <ivanfedonuk95@gmail.com>
+Date:   Mon Jun 20 16:52:05 2022 +0300
+
+    Add Reference form
+
+[33mcommit 55c3f01ad18585dae5ca855a5fa3ed2c3fa08562[m
+Author: whole-galaxy <dimon.skorohodov@gmail.com>
+Date:   Mon Jun 20 16:49:52 2022 +0300
+
+    Додав запис книги та розробники
+
+[33mcommit ef836c6aeb13a0346e8ff182807ece1d6ac3e66c[m
+Author: Miurionochek <ivanfedonuk95@gmail.com>
+Date:   Mon Jun 20 13:30:49 2022 +0300
+
+    Links between forms
+
+[33mcommit 044d5a4c08224c947181cf4fe69e7940ec325e84[m
+Author: whole-galaxy <dimon.skorohodov@gmail.com>
+Date:   Fri Jun 17 11:57:31 2022 +0300
+
+    Додав вікно Користувачі
+
+[33mcommit 26b3cb3a3364d62054e5e4c216b09de047d6b094[m[33m ([m[1;32mmain[m[33m)[m
+Author: Miurionochek <ivanfedonuk95@gmail.com>
+Date:   Tue Jun 14 13:41:07 2022 +0300
+
+    Registration
+
+[33mcommit 9e47763cf77a1b63aaec8ac8e905d38381b04df0[m
+Author: whole-galaxy <dimon.skorohodov@gmail.com>
+Date:   Sat Jun 11 12:21:16 2022 +0300
+
+    Створив головну сторінку програми, основні кнопки та поля.
+
+[33mcommit de350a8d78392ee02be64cf5f1c3c55b9ce62b15[m
+Author: whole-galaxy <dimon.skorohodov@gmail.com>
+Date:   Fri Jun 10 15:07:09 2022 +0300
+
+    Створив проект Librarian
+
+[33mcommit 02140fbd9efc9e8b4c4ff96f6c5193b55ef9a05f[m
+Author: whole-galaxy <dimon.skorohodov@gmail.com>
+Date:   Mon Mar 28 17:30:07 2022 +0300
+
+    yepi
+
+[33mcommit b5bb3d668549bd58863f147909830d6a2a1eccc6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Miurionochek <ivanfedonuk95@gmail.com>
+Date:   Mon Mar 28 17:21:01 2022 +0300
+
+    Add README.txt

@@ -1,4 +1,6 @@
 #pragma once
+#include <msclr\marshal_cppstd.h>
+#include "Back.h"
 
 namespace Librarian {
 
@@ -15,13 +17,15 @@ namespace Librarian {
 	public ref class WriteBook : public System::Windows::Forms::Form
 	{
 	public:
-		WriteBook(void)
+		WriteBook(int num)
 		{
+			book = num;
 			InitializeComponent();
 			//
 			//TODO: Add the constructor code here
 			//
 		}
+		int book;
 
 	protected:
 		/// <summary>
@@ -132,6 +136,7 @@ namespace Librarian {
 			this->label3->Size = System::Drawing::Size(378, 78);
 			this->label3->TabIndex = 0;
 			this->label3->Text = L"Продовжити";
+			this->label3->Click += gcnew System::EventHandler(this, &WriteBook::label3_Click);
 			// 
 			// textBox2
 			// 
@@ -184,6 +189,28 @@ namespace Librarian {
 	private: System::Void groupBox2_Enter(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void groupBox1_Enter(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+	int s = -1;
+	vector<Registration> users;
+	users = read_users(users);
+	vector<books> bookList;
+	bookList = read_books(bookList);
+
+	string a = msclr::interop::marshal_as<std::string>(textBox2->Text);
+	for (int i = 0; i < users.size(); i++) {
+		if (users[i].surname == a) {
+			s = i;
+		}
+	}
+	if (s >= 0) {
+		users[s].bookNum_user = book+1;
+		bookList[book].status = "borrowed";
+	}
+
+	write_books(bookList);
+	write_users(users);
+	this->Close();
 }
 };
 }
