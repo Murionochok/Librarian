@@ -25,6 +25,8 @@ namespace Librarian {
 			//TODO: Add the constructor code here
 			//
 		}
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
+	public:
 		int book;
 
 	protected:
@@ -69,6 +71,7 @@ namespace Librarian {
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -168,6 +171,27 @@ namespace Librarian {
 			this->label2->TabIndex = 0;
 			this->label2->Text = L"Запис книги";
 			// 
+			// tableLayoutPanel1
+			// 
+			this->tableLayoutPanel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(196)),
+				static_cast<System::Int32>(static_cast<System::Byte>(196)), static_cast<System::Int32>(static_cast<System::Byte>(196)));
+			this->tableLayoutPanel1->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
+			this->tableLayoutPanel1->ColumnCount = 1;
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				20)));
+			this->tableLayoutPanel1->Enabled = false;
+			this->tableLayoutPanel1->ForeColor = System::Drawing::SystemColors::ControlDark;
+			this->tableLayoutPanel1->Location = System::Drawing::Point(0, 0);
+			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
+			this->tableLayoutPanel1->RowCount = 1;
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 44)));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1920, 45);
+			this->tableLayoutPanel1->TabIndex = 4;
+			this->tableLayoutPanel1->Visible = false;
+			// 
 			// WriteBook
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -175,6 +199,7 @@ namespace Librarian {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->ClientSize = System::Drawing::Size(1904, 1041);
+			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->groupBox1);
 			this->Name = L"WriteBook";
 			this->Text = L"WriteBook";

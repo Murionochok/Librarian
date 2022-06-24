@@ -86,6 +86,7 @@ namespace Librarian {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label13;
 	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 
 
 	private:
@@ -115,11 +116,12 @@ namespace Librarian {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label32 = (gcnew System::Windows::Forms::Label());
-			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->groupBox1->SuspendLayout();
 			this->groupBox5->SuspendLayout();
 			this->SuspendLayout();
@@ -306,6 +308,28 @@ namespace Librarian {
 			this->groupBox5->TabStop = false;
 			this->groupBox5->Enter += gcnew System::EventHandler(this, &Users::groupBox5_Enter);
 			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label13->Location = System::Drawing::Point(257, 141);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(144, 25);
+			this->label13->TabIndex = 14;
+			this->label13->Text = L"з народження";
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label12->Location = System::Drawing::Point(15, 141);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(137, 25);
+			this->label12->TabIndex = 13;
+			this->label12->Text = L"Номер книги:";
+			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
@@ -341,27 +365,26 @@ namespace Librarian {
 			this->label32->TabIndex = 12;
 			this->label32->Text = L"Librarian";
 			// 
-			// label12
+			// tableLayoutPanel1
 			// 
-			this->label12->AutoSize = true;
-			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label12->Location = System::Drawing::Point(15, 141);
-			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(137, 25);
-			this->label12->TabIndex = 13;
-			this->label12->Text = L"Номер книги:";
-			// 
-			// label13
-			// 
-			this->label13->AutoSize = true;
-			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label13->Location = System::Drawing::Point(257, 141);
-			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(144, 25);
-			this->label13->TabIndex = 14;
-			this->label13->Text = L"з народження";
+			this->tableLayoutPanel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(196)),
+				static_cast<System::Int32>(static_cast<System::Byte>(196)), static_cast<System::Int32>(static_cast<System::Byte>(196)));
+			this->tableLayoutPanel1->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
+			this->tableLayoutPanel1->ColumnCount = 1;
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				20)));
+			this->tableLayoutPanel1->Enabled = false;
+			this->tableLayoutPanel1->ForeColor = System::Drawing::SystemColors::ControlDark;
+			this->tableLayoutPanel1->Location = System::Drawing::Point(0, 0);
+			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
+			this->tableLayoutPanel1->RowCount = 1;
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 44)));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1920, 45);
+			this->tableLayoutPanel1->TabIndex = 13;
+			this->tableLayoutPanel1->Visible = false;
 			// 
 			// Users
 			// 
@@ -370,6 +393,7 @@ namespace Librarian {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->ClientSize = System::Drawing::Size(1904, 1041);
+			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->label32);
 			this->Controls->Add(this->groupBox5);
 			this->Controls->Add(this->groupBox1);

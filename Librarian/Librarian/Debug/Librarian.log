@@ -1,18 +1,19 @@
 ﻿  CppCLR_WinformsProjekt.cpp
-B:\tmpProject\tmpName\Librarian\Librarian\Users.h(402,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\WriteBook.h(201,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(315,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(331,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Users.h(426,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\WriteBook.h(226,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(340,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(356,20): warning C4018: '<': signed/unsigned mismatch
+  Creators.cpp
   Form1.cpp
-B:\tmpProject\tmpName\Librarian\Librarian\Users.h(402,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\WriteBook.h(201,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(315,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(331,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Users.h(426,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\WriteBook.h(226,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(340,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(356,20): warning C4018: '<': signed/unsigned mismatch
   MyForm.cpp
-B:\tmpProject\tmpName\Librarian\Librarian\Users.h(402,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\WriteBook.h(201,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(315,20): warning C4018: '<': signed/unsigned mismatch
-B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(331,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Users.h(426,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\WriteBook.h(226,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(340,20): warning C4018: '<': signed/unsigned mismatch
+B:\tmpProject\tmpName\Librarian\Librarian\Form1.h(356,20): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   Librarian.vcxproj -> B:\tmpProject\tmpName\Librarian\Debug\Librarian.exe

@@ -56,7 +56,6 @@ namespace Librarian {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Reference::typeid));
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -120,7 +119,7 @@ namespace Librarian {
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->Size = System::Drawing::Size(1651, 550);
 			this->richTextBox1->TabIndex = 9;
-			this->richTextBox1->Text = resources->GetString(L"richTextBox1.Text");
+			this->richTextBox1->Text = L"Тут може бути ваша реклама. Тел:0660659001";
 			// 
 			// button3
 			// 

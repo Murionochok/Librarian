@@ -43,11 +43,15 @@ namespace Librarian {
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
 	private: System::Windows::Forms::PictureBox^ pictureBox4;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
-	private: System::Windows::Forms::RichTextBox^ richTextBox4;
-	private: System::Windows::Forms::RichTextBox^ richTextBox5;
-	private: System::Windows::Forms::RichTextBox^ richTextBox6;
+
+
+
 	private: System::Windows::Forms::RichTextBox^ richTextBox1;
 	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::RichTextBox^ richTextBox2;
+	private: System::Windows::Forms::RichTextBox^ richTextBox3;
+	private: System::Windows::Forms::RichTextBox^ richTextBox4;
+	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 
 
 
@@ -77,11 +81,12 @@ namespace Librarian {
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->richTextBox4 = (gcnew System::Windows::Forms::RichTextBox());
-			this->richTextBox5 = (gcnew System::Windows::Forms::RichTextBox());
-			this->richTextBox6 = (gcnew System::Windows::Forms::RichTextBox());
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->richTextBox2 = (gcnew System::Windows::Forms::RichTextBox());
+			this->richTextBox3 = (gcnew System::Windows::Forms::RichTextBox());
+			this->richTextBox4 = (gcnew System::Windows::Forms::RichTextBox());
+			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
@@ -103,11 +108,11 @@ namespace Librarian {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(398, 281);
+			this->label1->Location = System::Drawing::Point(583, 292);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(61, 25);
+			this->label1->Size = System::Drawing::Size(142, 25);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"Геній";
+			this->label1->Text = L"Федонюк Іван";
 			this->label1->Click += gcnew System::EventHandler(this, &Creators::label1_Click);
 			// 
 			// label3
@@ -115,39 +120,39 @@ namespace Librarian {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(1345, 281);
+			this->label3->Location = System::Drawing::Point(1037, 292);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(132, 25);
+			this->label3->Size = System::Drawing::Size(206, 25);
 			this->label3->TabIndex = 3;
-			this->label3->Text = L"Сверх-разум";
+			this->label3->Text = L"Скороходов Дмитро";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(304, 687);
+			this->label4->Location = System::Drawing::Point(568, 687);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(253, 25);
+			this->label4->Size = System::Drawing::Size(147, 25);
 			this->label4->TabIndex = 4;
-			this->label4->Text = L"Воно теж чимось похоже";
+			this->label4->Text = L"Середа Андрій";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(1372, 687);
+			this->label5->Location = System::Drawing::Point(1048, 687);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(105, 25);
+			this->label5->Size = System::Drawing::Size(186, 25);
 			this->label5->TabIndex = 5;
-			this->label5->Text = L"Дворянин";
+			this->label5->Text = L"Славич Олександр";
 			// 
 			// pictureBox2
 			// 
 			this->pictureBox2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(1292, 320);
+			this->pictureBox2->Location = System::Drawing::Point(1015, 320);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(250, 250);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -158,7 +163,7 @@ namespace Librarian {
 			// 
 			this->pictureBox3->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(307, 715);
+			this->pictureBox3->Location = System::Drawing::Point(525, 715);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(250, 250);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -169,7 +174,7 @@ namespace Librarian {
 			// 
 			this->pictureBox4->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(1292, 715);
+			this->pictureBox4->Location = System::Drawing::Point(1015, 715);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(250, 250);
 			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -180,51 +185,12 @@ namespace Librarian {
 			// 
 			this->pictureBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(307, 320);
+			this->pictureBox1->Location = System::Drawing::Point(525, 320);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(250, 250);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 10;
 			this->pictureBox1->TabStop = false;
-			// 
-			// richTextBox4
-			// 
-			this->richTextBox4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)));
-			this->richTextBox4->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->richTextBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->richTextBox4->Location = System::Drawing::Point(563, 435);
-			this->richTextBox4->Name = L"richTextBox4";
-			this->richTextBox4->Size = System::Drawing::Size(341, 135);
-			this->richTextBox4->TabIndex = 14;
-			this->richTextBox4->Text = resources->GetString(L"richTextBox4.Text");
-			// 
-			// richTextBox5
-			// 
-			this->richTextBox5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)));
-			this->richTextBox5->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->richTextBox5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->richTextBox5->Location = System::Drawing::Point(945, 435);
-			this->richTextBox5->Name = L"richTextBox5";
-			this->richTextBox5->Size = System::Drawing::Size(341, 135);
-			this->richTextBox5->TabIndex = 15;
-			this->richTextBox5->Text = resources->GetString(L"richTextBox5.Text");
-			// 
-			// richTextBox6
-			// 
-			this->richTextBox6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)));
-			this->richTextBox6->BorderStyle = System::Windows::Forms::BorderStyle::None;
-			this->richTextBox6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->richTextBox6->Location = System::Drawing::Point(563, 828);
-			this->richTextBox6->Name = L"richTextBox6";
-			this->richTextBox6->Size = System::Drawing::Size(341, 135);
-			this->richTextBox6->TabIndex = 16;
-			this->richTextBox6->Text = resources->GetString(L"richTextBox6.Text");
 			// 
 			// richTextBox1
 			// 
@@ -233,11 +199,11 @@ namespace Librarian {
 			this->richTextBox1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->richTextBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->richTextBox1->Location = System::Drawing::Point(945, 828);
+			this->richTextBox1->Location = System::Drawing::Point(1064, 971);
 			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(341, 135);
+			this->richTextBox1->Size = System::Drawing::Size(152, 23);
 			this->richTextBox1->TabIndex = 17;
-			this->richTextBox1->Text = resources->GetString(L"richTextBox1.Text");
+			this->richTextBox1->Text = L"@oleksandr_slavych";
 			// 
 			// button3
 			// 
@@ -255,6 +221,67 @@ namespace Librarian {
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &Creators::button3_Click);
 			// 
+			// richTextBox2
+			// 
+			this->richTextBox2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->richTextBox2->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->richTextBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->richTextBox2->Location = System::Drawing::Point(604, 971);
+			this->richTextBox2->Name = L"richTextBox2";
+			this->richTextBox2->Size = System::Drawing::Size(82, 23);
+			this->richTextBox2->TabIndex = 19;
+			this->richTextBox2->Text = L"@Golzzzy";
+			// 
+			// richTextBox3
+			// 
+			this->richTextBox3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->richTextBox3->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->richTextBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->richTextBox3->Location = System::Drawing::Point(588, 576);
+			this->richTextBox3->Name = L"richTextBox3";
+			this->richTextBox3->Size = System::Drawing::Size(152, 23);
+			this->richTextBox3->TabIndex = 20;
+			this->richTextBox3->Text = L"@Murionochiok";
+			// 
+			// richTextBox4
+			// 
+			this->richTextBox4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->richTextBox4->BorderStyle = System::Windows::Forms::BorderStyle::None;
+			this->richTextBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->richTextBox4->Location = System::Drawing::Point(1080, 576);
+			this->richTextBox4->Name = L"richTextBox4";
+			this->richTextBox4->Size = System::Drawing::Size(126, 23);
+			this->richTextBox4->TabIndex = 21;
+			this->richTextBox4->Text = L"@d_fastwalker";
+			this->richTextBox4->TextChanged += gcnew System::EventHandler(this, &Creators::richTextBox4_TextChanged_1);
+			// 
+			// tableLayoutPanel1
+			// 
+			this->tableLayoutPanel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(196)),
+				static_cast<System::Int32>(static_cast<System::Byte>(196)), static_cast<System::Int32>(static_cast<System::Byte>(196)));
+			this->tableLayoutPanel1->CellBorderStyle = System::Windows::Forms::TableLayoutPanelCellBorderStyle::Single;
+			this->tableLayoutPanel1->ColumnCount = 1;
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
+				100)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				20)));
+			this->tableLayoutPanel1->Enabled = false;
+			this->tableLayoutPanel1->ForeColor = System::Drawing::SystemColors::ControlDark;
+			this->tableLayoutPanel1->Location = System::Drawing::Point(0, 0);
+			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
+			this->tableLayoutPanel1->RowCount = 1;
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 44)));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1920, 45);
+			this->tableLayoutPanel1->TabIndex = 22;
+			this->tableLayoutPanel1->Visible = false;
+			// 
 			// Creators
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -262,11 +289,12 @@ namespace Librarian {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->ClientSize = System::Drawing::Size(1904, 1041);
+			this->Controls->Add(this->tableLayoutPanel1);
+			this->Controls->Add(this->richTextBox4);
+			this->Controls->Add(this->richTextBox3);
+			this->Controls->Add(this->richTextBox2);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->richTextBox1);
-			this->Controls->Add(this->richTextBox6);
-			this->Controls->Add(this->richTextBox5);
-			this->Controls->Add(this->richTextBox4);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->pictureBox4);
 			this->Controls->Add(this->pictureBox3);
@@ -278,6 +306,7 @@ namespace Librarian {
 			this->Controls->Add(this->label2);
 			this->Name = L"Creators";
 			this->Text = L"Creators";
+			this->Load += gcnew System::EventHandler(this, &Creators::Creators_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
@@ -291,6 +320,12 @@ namespace Librarian {
 	}
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void Creators_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void richTextBox4_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void richTextBox4_TextChanged_1(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
